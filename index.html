@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+     <div class="container">
+       <h1>Movie Tickets</h1>
+       <div class="row">
+         <div class="col-md-6">
+           <h2>Movies:</h2>
+           <form id="new-ticket">
+             <label for="movieType">Which movie would you like to see?</label>
+             <select class="form-control" id="movieType">
+               <option value="Terminator">Terminator</option>
+               <option value="Titanic">Titanic</option>
+               <option value="Aliens">Aliens</option>
+             </select>
+             <hr>
+             <label for="showtime">Showing Times:</label>
+             <select class="form-control" id="showtime">
+               <option value="true">Matinee</option>
+               <option value="false">Normal</option>
+             </select>
+             <hr>
+             <div class="form-group">
+               <label for="ageinput">Your Age:</label>
+               <input type="text" class="form-control" id="ageInput">
+             </div>
+
+             <button type="submit" class="btn">Add</button>
+           </form>
+          </div>
+          <div class="col-md-6">
+            <div id="output">
+
+            </div>
+          </div>
+       </div>
+     </div>
+   </body>
+</html>
